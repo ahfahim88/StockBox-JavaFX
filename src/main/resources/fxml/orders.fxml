@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.stockbox.controller.SimpleController">
+    <top>
+        <HBox spacing="10" padding="10" styleClass="top-bar">
+            <Label text="Orders" styleClass="app-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Back to Dashboard" onAction="#backToDashboard"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="View and process orders" styleClass="page-title"/>
+        </VBox>
+    </center>
+</BorderPane>

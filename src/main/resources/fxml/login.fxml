@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.stockbox.controller.LoginController">
+    <stylesheets>
+        <String>/styles/style.css</String>
+    </stylesheets>
+    <children>
+        <VBox spacing="10" alignment="CENTER" AnchorPane.topAnchor="80" AnchorPane.leftAnchor="200" AnchorPane.rightAnchor="200">
+            <Label text="StockBox" styleClass="app-title"/>
+            <Label text="Sign in to continue" styleClass="subtitle"/>
+            <TextField fx:id="username" promptText="Username" />
+            <PasswordField fx:id="password" promptText="Password" />
+            <Button text="Login" onAction="#onLogin" maxWidth="200" styleClass="primary-btn"/>
+            <Label fx:id="feedback" />
+        </VBox>
+    </children>
+</AnchorPane>

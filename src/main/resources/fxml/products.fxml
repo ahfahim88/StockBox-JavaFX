@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.stockbox.controller.ProductsController">
+    <top>
+        <HBox spacing="10" padding="10" styleClass="top-bar">
+            <Label text="Products" styleClass="app-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Back" onAction="#initialize" onMouseClicked="#"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="10" padding="10">
+            <TableView fx:id="table" onMouseClicked="#onRowDoubleClick" prefHeight="350">
+                <columns>
+                    <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+                    <TableColumn fx:id="colName" text="Name" prefWidth="250"/>
+                    <TableColumn fx:id="colSku" text="SKU" prefWidth="150"/>
+                    <TableColumn fx:id="colQty" text="Qty" prefWidth="80"/>
+                    <TableColumn fx:id="colPrice" text="Price" prefWidth="100"/>
+                </columns>
+            </TableView>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <TextField fx:id="tfName" promptText="Name"/>
+                <TextField fx:id="tfSku" promptText="SKU"/>
+                <TextField fx:id="tfQty" promptText="Qty" prefWidth="80"/>
+                <TextField fx:id="tfPrice" promptText="Price" prefWidth="100"/>
+                <Button text="Add" onAction="#addProduct" styleClass="primary-btn"/>
+                <Button text="Delete Selected" onAction="#deleteSelected"/>
+            </HBox>
+            <Label fx:id="feedback"/>
+        </VBox>
+    </center>
+</BorderPane>

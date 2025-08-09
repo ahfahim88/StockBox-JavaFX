@@ -1,0 +1,18 @@
+
+/* Modern blue theme */
+.root {
+    -fx-font-family: "Segoe UI", Arial;
+    -fx-background-color: linear-gradient(#f6fbff, #eef6ff);
+}
+.app-title {
+    -fx-font-size: 20px;
+    -fx-text-fill: #0b63d6;
+    -fx-font-weight: bold;
+}
+.subtitle { -fx-text-fill: #666; -fx-font-size: 12px; }
+.top-bar { -fx-background-color: white; -fx-border-color: transparent transparent #e6eefc transparent; -fx-padding: 10; }
+.side-bar { -fx-background-color: linear-gradient(#0b63d6, #0a52b0); -fx-padding: 15; -fx-pref-width: 180; }
+.side-bar .button { -fx-text-fill: white; -fx-background-color: transparent; -fx-font-weight: bold; -fx-padding: 8; }
+.primary-btn { -fx-background-color: #0b63d6; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 6 12 6 12; -fx-background-radius: 6; }
+.card { -fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08),8,0,0,2); -fx-padding: 12; -fx-border-radius: 6; -fx-background-radius: 6; }
+.page-title { -fx-font-size: 18px; -fx-text-fill: #0b63d6; }

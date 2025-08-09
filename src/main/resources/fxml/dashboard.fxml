@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.stockbox.controller.DashboardController">
+    <top>
+        <HBox spacing="10" padding="10" styleClass="top-bar">
+            <Label text="StockBox" styleClass="app-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label fx:id="welcome" />
+        </HBox>
+    </top>
+    <left>
+        <VBox spacing="8" padding="10" styleClass="side-bar">
+            <Button text="Dashboard" onAction="#goProducts" />
+            <Button text="Products" onAction="#goProducts" />
+            <Button text="Suppliers" onAction="#goSuppliers" />
+            <Button text="Customers" onAction="#goCustomers" />
+            <Button text="Orders" onAction="#goOrders" />
+            <Button text="Stock Adjust" onAction="#goStockAdjust" />
+            <Button text="Settings" onAction="#goSettings" />
+            <Button text="About" onAction="#goAbout" />
+        </VBox>
+    </left>
+    <center>
+        <StackPane>
+            <VBox alignment="CENTER" spacing="15">
+                <Label text="Dashboard" styleClass="page-title"/>
+                <HBox spacing="15" alignment="CENTER">
+                    <VBox spacing="5" styleClass="card" padding="10"><Label text="Total Products"/><Label text="${products.size}"/></VBox>
+                    <VBox spacing="5" styleClass="card" padding="10"><Label text="Low Stock"/><Label text="3"/></VBox>
+                    <VBox spacing="5" styleClass="card" padding="10"><Label text="Orders Today"/><Label text="0"/></VBox>
+                </HBox>
+            </VBox>
+        </StackPane>
+    </center>
+</BorderPane>
